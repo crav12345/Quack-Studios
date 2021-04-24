@@ -41,62 +41,62 @@ public class Rules
             choice = Random.Range(0, twos.Length);
             return twos[choice];
         }
-        if (i == 3)
+        else if (i == 3)
         {
             choice = Random.Range(0, threes.Length);
             return threes[choice];
         }
-        if (i == 4)
+        else if (i == 4)
         {
             choice = Random.Range(0, fours.Length);
             return fours[choice];
         }
-        if (i == 5)
+        else if (i == 5)
         {
             choice = Random.Range(0, fives.Length);
             return fives[choice];
         }
-        if (i == 6)
+        else if (i == 6)
         {
             choice = Random.Range(0, sixes.Length);
             return sixes[choice];
         }
-        if (i == 7)
+        else if (i == 7)
         {
             choice = Random.Range(0, sevens.Length);
             return sevens[choice];
         }
-        if (i == 8)
+        else if (i == 8)
         {
             choice = Random.Range(0, eights.Length);
             return eights[choice];
         }
-        if (i == 9)
+        else if (i == 9)
         {
             choice = Random.Range(0, nines.Length);
             return  nines[choice];
         }
-        if (i == 10)
+        else if (i == 10)
         {
             choice = Random.Range(0, tens.Length);
             return tens[choice];
         }
-        if (i == 11)
+        else if (i == 11)
         {
             choice = Random.Range(0, jacks.Length);
             return jacks[choice];
         }
-        if (i == 12)
+        else if (i == 12)
         {
             choice = Random.Range(0, queens.Length);
             return queens[choice];
         }
-        if (i == 13)
+        else if (i == 13)
         {
             choice = Random.Range(0, kings.Length);
             return kings[choice];
         }
-        if (i == 14)
+        else
         {
             choice = Random.Range(0, aces.Length);
             return aces[choice];
