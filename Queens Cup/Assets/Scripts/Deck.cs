@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Deck : MonoBehaviour
 {
+    #region Varibles
     private List<Card> myDeck = new List<Card>();
     private Rules myRules;
+    #endregion
 
     private string path = "Cards/Card_";
 
@@ -19,6 +21,9 @@ public class Deck : MonoBehaviour
         // InstantiateDeck();
     }
 
+    /// <summary>
+    /// Builds a deck with random rules at runtime
+    /// </summary>
     void BuildDeck()
     {
         // Get instance of our Rules script
