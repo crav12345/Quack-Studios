@@ -7,11 +7,16 @@ public class Deck : MonoBehaviour
     private List<Card> myDeck = new List<Card>();
     private Rules myRules;
 
+    private string path = "Cards/Card_";
+
     // Start is called before the first frame update
     void Start()
     {
         // Make each card
         BuildDeck();
+
+        // Throw the deck on screen
+        // InstantiateDeck();
     }
 
     void BuildDeck()
@@ -67,4 +72,26 @@ public class Deck : MonoBehaviour
             }
         }
     }
+
+    /*
+    void InstantiateDeck()
+    {
+        // GO through each card
+        foreach (Card card in myDeck)
+        {
+            // Instantiate the card on screen at a random position
+            Instantiate(
+                Resources.Load(
+                    path +
+                    card.mySuit +
+                    card.myValue
+                ),
+                new Vector2(
+
+                ),
+                Quaternion.identity
+            );
+        }
+    }
+    */
 }

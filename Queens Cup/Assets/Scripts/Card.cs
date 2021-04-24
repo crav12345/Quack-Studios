@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Card
 {
-    private string myValue;
-    private string mySuit;
-    private string myRule;
+    public string myValue { get; private set; }
+    public string mySuit { get; private set; }
+    public string myRule { get; private set; }
 
     public Card(string newSuit, string newValue, string newRule)
     {
