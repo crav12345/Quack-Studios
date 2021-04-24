@@ -37,8 +37,8 @@ public class Rules : MonoBehaviour
     public string[][] choices = new string[][] { twos, threes, fours, fives, sixes, sevens, eights, nines, tens, jacks, kings, queens, aces};
     public string GetRule(int i)
     {
-        choice = Random.Range(0, choices[i].Length);
-        return choices[i][choice];
+        choice = Random.Range(0, choices[i - 2].Length);
+        return choices[i - 2][choice];
 
 
 
