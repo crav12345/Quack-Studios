@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class Card
 {
-    #region Variables
-    private string myValue;
-    private string mySuit;
-    private string myRule;
-    #endregion
+    public string myValue { get; private set; }
+    public string mySuit { get; private set; }
+    public string myRule { get; private set; }
 
     /// <summary>
     /// Constructor for cards
