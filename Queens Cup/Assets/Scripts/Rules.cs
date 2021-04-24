@@ -4,37 +4,38 @@ using UnityEngine;
 
 public class Rules : MonoBehaviour
 {
-    int choice;
-
+    #region Variables
+    [Header("Rules")]
     public static string[] twos = new string[] { "Double Double: Next person to draw 2 must must drink twice." };
-
-    public static string[] threes = new string[] { "Drink for free - take one of someone else’s drinks.", "Drink for me - pick a friend to drink for you for your next turn so you don’t have to!", "Snaps: Everyone snaps their fingers three times, last one drinks." };
-
-    public static string[] fours = new string[] { "Leap frog: leap frog race with a parent against two others from one side of the room to another. Losing team drinks.", "Voltage: Race to turn of the lights. The winner does not drink, the rest do." };
-
+    public static string[] threes = new string[] { "Drink for free - take one of someone else’s drinks.", 
+                                                   "Drink for me - pick a friend to drink for you for your next turn so you don’t have to!", "Snaps: Everyone snaps their fingers three times, last one drinks." };
+    public static string[] fours = new string[] { "Leap frog: leap frog race with a parent against two others from one side of the room to another. Losing team drinks.", 
+                                                  "Voltage: Race to turn of the lights. The winner does not drink, the rest do." };
     public static string[] fives = new string[] { "Reroll: Reshuffle the deck." };
-
     public static string[] sixes = new string[] { "Breakdown: Slap yourself in the face and drink." };
-
     public static string[] sevens = new string[] { "Skydive: Everyone raises one hand into the air. Continue play. The first person to lower their hand drinks." };
-
     public static string[] eights = new string[] { "Guardian: Pick a person other than yourself. That person is protected from having to drink once." };
-
     public static string[] nines = new string[] { "Jinx: Everyone knocks on a wooden surface. The last to knock drinks." };
-
     public static string[] tens = new string[] { "Hollywood: Name a movie genre. Everyone takes turns listing movies in that genre. If a person can't name a movie in 3 seconds, they drink." };
-
     public static string[] jacks = new string[] { "Takeout: Pick a person. Play Chopsticks. Loser drinks." };
-
-    public static string[] queens = new string[] { "Everyone but you drinks", "Bring a player back into the game " };
-
-    public static string[] kings = new string[] { "Draw another card and do that rule twice.", "Choose a prince to drink with you until another king is drawn." };
-
-    public static string[] aces = new string[] { "Compliment someone aggressively until you can’t think of a compliment or you laugh. Don’t repeat compliments.", "Alphabet: say a word starting with “A” - “Z”, if you’re can’t think of a word drink " };
-
+    public static string[] queens = new string[] { "Everyone but you drinks", 
+                                                   "Bring a player back into the game " };
+    public static string[] kings = new string[] { "Draw another card and do that rule twice.", 
+                                                  "Choose a prince to drink with you until another king is drawn." };
+    public static string[] aces = new string[] { "Compliment someone aggressively until you can’t think of a compliment or you laugh. Don’t repeat compliments.", 
+                                                 "Alphabet: say a word starting with “A” - “Z”, if you’re can’t think of a word drink " };
     public static string[] jokers = new string[] { "Drink the beverage in the middle of the table, replace it with a new one, and you’re out of the game, congratulations!" };
 
+    [Header("Choices")]
+    int choice;
     public string[][] choices = new string[][] { twos, threes, fours, fives, sixes, sevens, eights, nines, tens, jacks, kings, queens, aces};
+    #endregion
+
+    /// <summary>
+    /// Grabs a random rule by the index
+    /// </summary>
+    /// <param name="i"></param>
+    /// <returns></returns>
     public string GetRule(int i)
     {
         choice = Random.Range(0, choices[i - 2].Length);

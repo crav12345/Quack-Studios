@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Deck : MonoBehaviour
 {
+    #region Varibles
     private List<Card> myDeck = new List<Card>();
     private Rules myRules;
+    #endregion
 
     // Start is called before the first frame update
     void Start()
@@ -14,6 +16,9 @@ public class Deck : MonoBehaviour
         BuildDeck();
     }
 
+    /// <summary>
+    /// Builds a deck with random rules at runtime
+    /// </summary>
     void BuildDeck()
     {
         // Get instance of our Rules script
