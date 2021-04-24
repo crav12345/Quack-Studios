@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rules
+public class Rules : MonoBehaviour
 {
     int choice;
 

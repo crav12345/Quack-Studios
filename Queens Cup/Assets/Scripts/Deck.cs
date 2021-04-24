@@ -5,6 +5,7 @@ using UnityEngine;
 public class Deck : MonoBehaviour
 {
     private List<Card> myDeck;
+    private Rules myRules;
 
     // Start is called before the first frame update
     void Start()
@@ -15,11 +16,14 @@ public class Deck : MonoBehaviour
 
     void BuildDeck()
     {
+        // Get instance of our Rules script
+        myRules = GetComponent<Rules>();
+
         // For each value in a deck of cards
         for (int i = 2; i <= 14; i++)
         {
             // Grab one of the rules for that value
-            string myRule = ""; // GetRule(i);
+            string myRule = myRules.GetRule(i);
 
             // Cards that are not face cards
             if (i <= 10)
