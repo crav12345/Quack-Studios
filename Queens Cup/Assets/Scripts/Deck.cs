@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class Deck : MonoBehaviour
 {
-    #region Varibles
+    #region Variables
     private List<Card> myDeck = new List<Card>();
     private Rules myRules;
     #endregion
-
-    private string path = "Cards/Card_";
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +16,7 @@ public class Deck : MonoBehaviour
         BuildDeck();
 
         // Throw the deck on screen
-        // InstantiateDeck();
+        InstantiateDeck();
     }
 
     /// <summary>
@@ -78,25 +76,39 @@ public class Deck : MonoBehaviour
         }
     }
 
-    /*
     void InstantiateDeck()
     {
-        // GO through each card
+        // Go through each card
         foreach (Card card in myDeck)
         {
-            // Instantiate the card on screen at a random position
+            // Get random Y-pos within the boundaries of the main camera
+            float spawnY =
+                Random.Range(
+                    Camera.main.ScreenToWorldPoint(
+                        new Vector2(0, 0)).y,
+                    Camera.main.ScreenToWorldPoint(
+                        new Vector2(0, Screen.height)).y
+                );
+            // Get random X-pos within the boundaries of the main camera
+            float spawnX =
+                Random.Range(
+                    Camera.main.ScreenToWorldPoint(
+                        new Vector2(0, 0)).x,
+                    Camera.main.ScreenToWorldPoint(
+                        new Vector2(Screen.width, 0)).x
+                );
+
+            // Create a vector two based on the above X and Y values
+            Vector2 spawnPosition = new Vector2(spawnX, spawnY);
+
+            // Instantiate the card on screen at our random position
             Instantiate(
                 Resources.Load(
-                    path +
-                    card.mySuit +
-                    card.myValue
+                    "Cards/Card"
                 ),
-                new Vector2(
-
-                ),
-                Quaternion.identity
+                spawnPosition,
+                Quaternion.Euler(0, 0, Random.Range(0, 360))
             );
         }
     }
-    */
 }
