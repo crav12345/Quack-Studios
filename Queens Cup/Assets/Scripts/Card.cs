@@ -2,21 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Card : MonoBehaviour
+public class Card
 {
-    private int myValue;
-    private char mySuit;
+    private string myValue;
+    private string mySuit;
     private string myRule;
 
-    // Start is called before the first frame update
-    void Start()
+    public Card(string newSuit, string newValue, string newRule)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        mySuit = newSuit;
+        myValue = newValue;
+        myRule = newRule;
     }
 }
