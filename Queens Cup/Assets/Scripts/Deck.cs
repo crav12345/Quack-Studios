@@ -9,6 +9,7 @@ public class Deck : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Make each card
         BuildDeck();
     }
 
@@ -17,8 +18,10 @@ public class Deck : MonoBehaviour
         // For each value in a deck of cards
         for (int i = 2; i <= 14; i++)
         {
+            // Grab one of the rules for that value
             string myRule = ""; // GetRule(i);
 
+            // Cards that are not face cards
             if (i <= 10)
             {
                 myDeck.Add(new Card("H", i.ToString(), myRule));
@@ -26,6 +29,7 @@ public class Deck : MonoBehaviour
                 myDeck.Add(new Card("S", i.ToString(), myRule));
                 myDeck.Add(new Card("C", i.ToString(), myRule));
             }
+            // Jacks
             else if (i == 11)
             {
                 myDeck.Add(new Card("H", "J", myRule));
@@ -33,6 +37,7 @@ public class Deck : MonoBehaviour
                 myDeck.Add(new Card("S", "J", myRule));
                 myDeck.Add(new Card("C", "J", myRule));
             }
+            // Queens
             else if (i == 12)
             {
                 myDeck.Add(new Card("H", "Q", myRule));
@@ -40,6 +45,7 @@ public class Deck : MonoBehaviour
                 myDeck.Add(new Card("S", "Q", myRule));
                 myDeck.Add(new Card("C", "Q", myRule));
             }
+            // Kings
             else if (i == 13)
             {
                 myDeck.Add(new Card("H", "K", myRule));
@@ -47,6 +53,7 @@ public class Deck : MonoBehaviour
                 myDeck.Add(new Card("S", "K", myRule));
                 myDeck.Add(new Card("C", "K", myRule));
             }
+            // Aces
             else
             {
                 myDeck.Add(new Card("H", "A", myRule));
