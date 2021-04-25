@@ -21,7 +21,7 @@ public class Rules : MonoBehaviour
     public static string[] jacks = new string[] { "Takeout:\nPick a person. Play Chopsticks. Loser drinks." };
     public static string[] queens = new string[] { "Outlier:\nEveryone but you drinks.", 
                                                    "Resurrection:\nBring a player back into the game." };
-    public static string[] kings = new string[] { "Draw!:\n another card and do that rule twice.", 
+    public static string[] kings = new string[] { "Draw!:\n Draw another card and do that rule twice.", 
                                                   "Father and Son:\nChoose a prince to drink with you until another king is drawn." };
     public static string[] aces = new string[] { "Compliments to the Chef:\nCompliment someone aggressively until you can’t think of a compliment or you laugh.  Don’t repeat compliments.",
                                                  "Alphabet:\nsay a word starting with “A” - “Z”, if you’re can’t think of a word drink " };
