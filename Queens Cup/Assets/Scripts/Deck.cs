@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/// <summary>
+/// Creates a deck of 52 cards and places them on the screen in random
+/// positions.
+/// </summary>
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
