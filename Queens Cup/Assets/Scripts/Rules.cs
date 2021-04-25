@@ -50,7 +50,7 @@ public class Rules : MonoBehaviour
     
     public static string[] jacks = new string[] {
         "Takeout:\nPick a person. Play Chopsticks. Loser drinks.",
-        "That's Wack!:\nSay something that's true and something that's a lie.  If more than two people guess the lie, drink.  If not, everyone else drinks."
+        "Charades!:\nPlay a game of charades, and you're doing the acting!  If your act is guessed, drink.  If not, everyone else drinks."
     };
     
     public static string[] queens = new string[] {
@@ -59,7 +59,7 @@ public class Rules : MonoBehaviour
     };
     
     public static string[] kings = new string[] {
-        "Draw!:\n Draw another card and do that rule twice.",
+        "King's Bounty!:\n Draw another card and do that rule twice.",
         "Father and Son:\nChoose a prince to drink with you until another king is drawn."
     };
 
