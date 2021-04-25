@@ -15,6 +15,7 @@ public class CardInteraction : MonoBehaviour, IPointerClickHandler
     [SerializeField] public string mySuit;
 
     [SerializeField] private AudioClip queenSong;
+    [SerializeField] private AudioClip cardFlip;
     private AudioSource myAudio;
 
     private string path = "CardArt/";
@@ -61,5 +62,16 @@ public class CardInteraction : MonoBehaviour, IPointerClickHandler
         }
 
         overlay.SetActive(true);
+    }
+
+    /// <summary>
+    /// Destroys card on click
+    /// </summary>
+    public void destroyCard()
+    {
+        myAudio.clip = cardFlip;
+        myAudio.Play();
+
+        Destroy(gameObject);
     }
 }

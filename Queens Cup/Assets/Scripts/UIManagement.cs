@@ -7,14 +7,14 @@ public class UIManagement : MonoBehaviour
 {
     #region Variables
     private string sceneName;
-    private AudioSource myAudio;
-    [SerializeField] private AudioClip cardFlip;
+    //private AudioSource myAudio;
+    //[SerializeField] private AudioClip cardFlip;
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-        myAudio = GameObject.Find("Audio").GetComponent<AudioSource>();
+        //myAudio = GameObject.Find("Audio").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -44,14 +44,14 @@ public class UIManagement : MonoBehaviour
         #endif
     }
 
-    /// <summary>
-    /// Destroys card on click
-    /// </summary>
-    public void destroyCard()
-    {
-        myAudio.clip = cardFlip;
-        myAudio.Play();
+    ///// <summary>
+    ///// Destroys card on click
+    ///// </summary>
+    //public void destroyCard()
+    //{
+    //    myAudio.clip = cardFlip;
+    //    myAudio.Play();
 
-        Destroy(gameObject);
-    }
+    //    Destroy(gameObject);
+    //}
 }
