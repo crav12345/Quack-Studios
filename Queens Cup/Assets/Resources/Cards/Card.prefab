@@ -119,8 +119,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 5438326488921732337}
-          m_TargetAssemblyTypeName: UIManagement, Assembly-CSharp
+        - m_Target: {fileID: 8751208612564654319}
+          m_TargetAssemblyTypeName: CardInteraction, Assembly-CSharp
           m_MethodName: destroyCard
           m_Mode: 1
           m_Arguments:
@@ -217,7 +217,6 @@ GameObject:
   - component: {fileID: 7029613196042405948}
   - component: {fileID: 7029613196042405949}
   - component: {fileID: 7209674752452385946}
-  - component: {fileID: 8097706510638381780}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -316,24 +315,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4, y: 1.9}
   m_EdgeRadius: 0
---- !u!114 &8097706510638381780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7029613196042405951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55dd6adff9d76a24fa833ff896ce5b0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overlay: {fileID: 34911126813782590}
-  myImage: {fileID: 6718435036910418606}
-  myText: {fileID: 7226185832406797300}
-  myValue: 
-  myRule: 
-  mySuit: 
 --- !u!1 &7029613196799327337
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +325,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7029613196799327342}
   - component: {fileID: 3533710383897004970}
-  - component: {fileID: 5438326488921732337}
+  - component: {fileID: 8751208612564654319}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -381,7 +362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff1a36cd5e26fbf44b9f99db2bb87caa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5438326488921732337
+--- !u!114 &8751208612564654319
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -390,9 +371,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 7029613196799327337}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aacd13d922107243b25e9dfc903f640, type: 3}
+  m_Script: {fileID: 11500000, guid: 55dd6adff9d76a24fa833ff896ce5b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  overlay: {fileID: 34911126813782590}
+  myImage: {fileID: 6718435036910418606}
+  myText: {fileID: 7226185832406797300}
+  myValue: 
+  myRule: 
+  mySuit: 
+  queenSong: {fileID: 8300000, guid: a43c2405f0b22804fa5d5001b29f16ea, type: 3}
+  cardFlip: {fileID: 8300000, guid: b2114b015a1c6b541a2207865a46635f, type: 3}
 --- !u!1 &8240001014527614646
 GameObject:
   m_ObjectHideFlags: 0
