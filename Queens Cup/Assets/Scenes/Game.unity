@@ -421,7 +421,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 10b04313161a8b74ea4c9e75c7821345, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -967,7 +967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aacd13d922107243b25e9dfc903f640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardFlip: {fileID: 8300000, guid: b2114b015a1c6b541a2207865a46635f, type: 3}
 --- !u!1 &1110619292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,7 +1850,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: d287a61135d815346ad33a0fe6b114b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
