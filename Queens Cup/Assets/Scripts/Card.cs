@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/// <summary>
+/// Card holds the value, suit, and rule associated with an instance of a
+/// playinig card.
+/// </summary>
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

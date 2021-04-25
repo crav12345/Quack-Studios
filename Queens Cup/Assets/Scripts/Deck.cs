@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/// <summary>
+/// Creates a deck of 52 cards and places them on the screen in random
+/// positions.
+/// </summary>
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -81,6 +85,7 @@ public class Deck : MonoBehaviour
         // Go through each card
         foreach (Card card in myDeck)
         {
+            /*
             // Get random Y-pos within the boundaries of the main camera
             float spawnY =
                 Random.Range(
@@ -100,15 +105,23 @@ public class Deck : MonoBehaviour
 
             // Create a vector two based on the above X and Y values
             Vector2 spawnPosition = new Vector2(spawnX, spawnY);
+            */
 
             // Instantiate the card on screen at our random position
-            Instantiate(
+            GameObject newCard = (GameObject)Instantiate(
                 Resources.Load(
                     "Cards/Card"
                 ),
-                spawnPosition,
+                new Vector2(0,0),
                 Quaternion.Euler(0, 0, Random.Range(0, 360))
             );
+
+
+            CardInteraction newCardValues = newCard.GetComponentInChildren<CardInteraction>();
+
+            newCardValues.mySuit = card.mySuit;
+            newCardValues.myRule = card.myRule;
+            newCardValues.myValue = card.myValue;
         }
     }
 }
