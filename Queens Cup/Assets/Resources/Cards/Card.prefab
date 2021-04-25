@@ -334,6 +334,8 @@ MonoBehaviour:
   myValue: 
   myRule: 
   mySuit: 
+  cardFlip: {fileID: 8300000, guid: b2114b015a1c6b541a2207865a46635f, type: 3}
+  queenSong: {fileID: 8300000, guid: a43c2405f0b22804fa5d5001b29f16ea, type: 3}
 --- !u!1 &7029613196799327337
 GameObject:
   m_ObjectHideFlags: 0
