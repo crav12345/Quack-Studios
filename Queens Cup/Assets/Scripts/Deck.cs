@@ -9,7 +9,7 @@ using UnityEngine;
 public class Deck : MonoBehaviour
 {
     #region Variables
-    private List<Card> myDeck = new List<Card>();
+    public List<Card> myDeck = new List<Card>();
     private Rules myRules;
     #endregion
 

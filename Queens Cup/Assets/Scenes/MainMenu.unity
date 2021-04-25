@@ -251,6 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aacd13d922107243b25e9dfc903f640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardFlip: {fileID: 0}
 --- !u!82 &199257624
 AudioSource:
   m_ObjectHideFlags: 0
@@ -265,7 +266,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
