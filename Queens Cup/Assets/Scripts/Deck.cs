@@ -106,13 +106,20 @@ public class Deck : MonoBehaviour
             Vector2 spawnPosition = new Vector2(spawnX, spawnY);
 
             // Instantiate the card on screen at our random position
-            Instantiate(
+            GameObject newCard = (GameObject)Instantiate(
                 Resources.Load(
                     "Cards/Card"
                 ),
                 spawnPosition,
                 Quaternion.Euler(0, 0, Random.Range(0, 360))
             );
+
+
+            CardInteraction newCardValues = newCard.GetComponentInChildren<CardInteraction>();
+
+            newCardValues.mySuit = card.mySuit;
+            newCardValues.myRule = card.myRule;
+            newCardValues.myValue = card.myValue;
         }
     }
 }
