@@ -19,7 +19,6 @@ public class CardInteraction : MonoBehaviour, IPointerClickHandler
     
     private AudioSource myAudio;
     private List<Card> myDeck;
-    private GameObject endGameMenu;
 
     private string path = "CardArt/";
     #endregion
@@ -82,12 +81,7 @@ public class CardInteraction : MonoBehaviour, IPointerClickHandler
 
         if (myDeck.Count == 0)
         {
-            GameOver();
+            UIManagement.instance.GameOver();
         }
-    }
-
-    public void GameOver()
-    {
-        
     }
 }

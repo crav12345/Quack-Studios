@@ -6,13 +6,15 @@ using UnityEngine.SceneManagement;
 public class UIManagement : MonoBehaviour
 {
     #region Variables
+    public static UIManagement instance;
     private string sceneName;
+    [SerializeField] private GameObject endGameMenu;
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-        //myAudio = GameObject.Find("Audio").GetComponent<AudioSource>();
+        instance = this;
     }
 
     // Update is called once per frame
@@ -40,5 +42,18 @@ public class UIManagement : MonoBehaviour
         #else
                  Application.Quit();
         #endif
+    }
+
+    /// <summary>
+    /// Game over
+    /// </summary>
+    public void GameOver()
+    {
+        endGameMenu.SetActive(true);
+    }
+
+    public void resetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
