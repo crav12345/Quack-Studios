@@ -85,6 +85,7 @@ public class Deck : MonoBehaviour
         // Go through each card
         foreach (Card card in myDeck)
         {
+            /*
             // Get random Y-pos within the boundaries of the main camera
             float spawnY =
                 Random.Range(
@@ -104,13 +105,14 @@ public class Deck : MonoBehaviour
 
             // Create a vector two based on the above X and Y values
             Vector2 spawnPosition = new Vector2(spawnX, spawnY);
+            */
 
             // Instantiate the card on screen at our random position
             GameObject newCard = (GameObject)Instantiate(
                 Resources.Load(
                     "Cards/Card"
                 ),
-                spawnPosition,
+                new Vector2(0,0),
                 Quaternion.Euler(0, 0, Random.Range(0, 360))
             );
 

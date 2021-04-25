@@ -343,7 +343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7029613196799327342}
-  - component: {fileID: 2605318192732509805}
+  - component: {fileID: 3533710383897004970}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -368,7 +368,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2605318192732509805
+--- !u!114 &3533710383897004970
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -377,7 +377,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7029613196799327337}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aacd13d922107243b25e9dfc903f640, type: 3}
+  m_Script: {fileID: 11500000, guid: ff1a36cd5e26fbf44b9f99db2bb87caa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8240001014527614646
