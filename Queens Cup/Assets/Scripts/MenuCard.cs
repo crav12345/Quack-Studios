@@ -1,12 +1,16 @@
-﻿using System.Collections;
+﻿/// <summary>
+/// This script can be added to a prefab to make an instance of it spipn and
+/// fall towards a position below the camera before destroying itself.
+/// </summary>
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MenuCard : MonoBehaviour
 {
     private float speed = 5.0f;
-    private Vector2 target;
     private float rotationValue;
+    private Vector2 target;
 
     private void Start()
     {

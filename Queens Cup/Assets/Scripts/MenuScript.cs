@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/// <summary>
+/// Instantiates a prefab from the resources folder at random positions on the
+/// Y-axis.
+/// </summary>
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
