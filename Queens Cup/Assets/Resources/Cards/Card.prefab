@@ -299,6 +299,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   overlay: {fileID: 34911126813782590}
+  myImage: {fileID: 6718435036910418606}
+  myText: {fileID: 7226185832406797300}
+  myValue: 
+  myRule: 
+  mySuit: 
 --- !u!1 &7029613196799327337
 GameObject:
   m_ObjectHideFlags: 0
