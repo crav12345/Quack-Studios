@@ -14,7 +14,6 @@ public class CardInteraction : MonoBehaviour, IPointerClickHandler
     [SerializeField] public string myRule;
     [SerializeField] public string mySuit;
 
-    [SerializeField] private AudioClip cardFlip;
     [SerializeField] private AudioClip queenSong;
     private AudioSource myAudio;
 
