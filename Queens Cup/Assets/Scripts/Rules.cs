@@ -7,7 +7,8 @@ public class Rules : MonoBehaviour
     #region Variables
     [Header("Rules")]
     public static string[] twos = new string[] {
-        "Double Double:\nNext person to draw 2 must must drink twice."
+        "Double Double:\nNext person to draw 2 must must drink twice.",
+        "Pants on Fire:\nPlay one round of two truths and a lie. If the lie is found, you drink. If a truth is picked, the rest of the group drinks."
     };
 
     public static string[] threes = new string[] {
@@ -22,7 +23,7 @@ public class Rules : MonoBehaviour
     };
 
     public static string[] fives = new string[] {
-        "Reroll:\nReshuffle the deck."
+       "Copycat:\nPick a person. That person drinks every time you drink for 9 turns, or until copycat is drawn again."
     };
 
     public static string[] sixes = new string[] {
