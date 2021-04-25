@@ -41,4 +41,12 @@ public class UIManagement : MonoBehaviour
                  Application.Quit();
         #endif
     }
+
+    /// <summary>
+    /// Destroys card on click
+    /// </summary>
+    public void destroyCard()
+    {
+        Destroy(gameObject);
+    }
 }
