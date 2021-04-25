@@ -8,6 +8,7 @@ using UnityEngine;
 
 public class MenuScript : MonoBehaviour
 {
+    private AudioSource menuSong;
     private string path = "Cards/MenuCard";
     private Object menuCard;
 
@@ -17,6 +18,10 @@ public class MenuScript : MonoBehaviour
         menuCard = Resources.Load(path);
 
         Invoke("GenerateCard", Random.Range(1.0f, 5.0f));
+
+        menuSong = GetComponent<AudioSource>();
+        menuSong.Play();
+        menuSong.loop = true;
     }
 
     void GenerateCard()
