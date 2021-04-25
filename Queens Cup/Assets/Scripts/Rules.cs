@@ -39,15 +39,18 @@ public class Rules : MonoBehaviour
     };
     
     public static string[] nines = new string[] {
-        "Jinx:\nEveryone knocks on a wooden surface.  The last to knock drinks."
+        "Jinx:\nEveryone knocks on a wooden surface.  The last to knock drinks.",
+        "Ninja:\nPlay a game of ninja with someone.  The loser drinks."
     };
 
     public static string[] tens = new string[] {
-        "Hollywood:\nName a movie genre.  Everyone takes turns listing movies in that genre.  If a person can't name a movie in 3 seconds, they drink."
+        "Hollywood:\nName a movie genre.  Everyone takes turns listing movies in that genre.  If a person can't name a movie in 3 seconds, they drink.",
+        "Roast:\nPick someone to have a roast battle or rap battle.  The other players judge.  Loser drinks."
     };
     
     public static string[] jacks = new string[] {
-        "Takeout:\nPick a person. Play Chopsticks. Loser drinks."
+        "Takeout:\nPick a person. Play Chopsticks. Loser drinks.",
+        "That's Wack!:\nSay something that's true and something that's a lie.  If more than two people guess the lie, drink.  If not, everyone else drinks."
     };
     
     public static string[] queens = new string[] {
