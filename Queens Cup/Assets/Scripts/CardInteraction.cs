@@ -14,12 +14,18 @@ public class CardInteraction : MonoBehaviour, IPointerClickHandler
     [SerializeField] public string myRule;
     [SerializeField] public string mySuit;
 
+    [SerializeField] private AudioClip cardFlip;
+    [SerializeField] private AudioClip queenSong;
+    private AudioSource myAudio;
+
     private string path = "CardArt/";
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
+        myAudio = GameObject.Find("Audio").GetComponent<AudioSource>();
+
         // for the Pointer event
         addPhysics2DRaycaster();
     }
@@ -48,6 +54,12 @@ public class CardInteraction : MonoBehaviour, IPointerClickHandler
                 myValue +
                 mySuit
             );
+
+        if(myValue == "Q")
+        {
+            myAudio.clip = queenSong;
+            myAudio.Play();
+        }
 
         overlay.SetActive(true);
     }
