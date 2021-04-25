@@ -7,7 +7,8 @@ public class Rules : MonoBehaviour
     #region Variables
     [Header("Rules")]
     public static string[] twos = new string[] {
-        "Double Double:\nNext person to draw 2 must must drink twice."
+        "Double Double:\nNext person to draw 2 must must drink twice.",
+        "Pants on Fire:\nPlay one round of two truths and a lie. If the lie is found, you drink. If a truth is picked, the rest of the group drinks."
     };
 
     public static string[] threes = new string[] {
@@ -22,40 +23,47 @@ public class Rules : MonoBehaviour
     };
 
     public static string[] fives = new string[] {
-        "Reroll:\nReshuffle the deck."
+       "Copycat:\nPick a person. That person drinks every time you drink for 9 turns, or until copycat is drawn again.",
+       "Picasso:\nDraw something in 10 seconds. If the group guesses it, you drink, if they can't, everyone drinks once and you drink twice."
     };
 
     public static string[] sixes = new string[] {
-        "Breakdown:\nSlap yourself in the face and drink."
+        "Breakdown:\nSlap yourself in the face and drink.",
+        "Radio:\n Pick a person. Have them hum a song for 5 seconds. If you can't guess it, you drink."
     };
     
     public static string[] sevens = new string[] {
-        "Skydive:\nEveryone raises one hand into the air.  Continue play.  The first person to lower their hand drinks."
+        "Skydive:\nEveryone raises one hand into the air.  Continue play.  The first person to lower their hand drinks.",
+        "Homies:\nPick two people to be your homies. You and your homies skip the next group event."
     };
     
     public static string[] eights = new string[] {
-        "Guardian:\nPick a person other than yourself.  That person is protected from having to drink once."
+        "Guardian:\nPick a person other than yourself.  That person is protected from having to drink once.",
+        "Gymnast:\nEvery balances on one leg. First person to lose their balance drinks."
     };
     
     public static string[] nines = new string[] {
-        "Jinx:\nEveryone knocks on a wooden surface.  The last to knock drinks."
+        "Jinx:\nEveryone knocks on a wooden surface.  The last to knock drinks.",
+        "Ninja:\nPlay a game of ninja with someone.  The loser drinks."
     };
 
     public static string[] tens = new string[] {
-        "Hollywood:\nName a movie genre.  Everyone takes turns listing movies in that genre.  If a person can't name a movie in 3 seconds, they drink."
+        "Hollywood:\nName a movie genre.  Everyone takes turns listing movies in that genre.  If a person can't name a movie in 3 seconds, they drink.",
+        "Roast:\nPick someone to have a roast battle or rap battle.  The other players judge.  Loser drinks."
     };
     
     public static string[] jacks = new string[] {
-        "Takeout:\nPick a person. Play Chopsticks. Loser drinks."
+        "Takeout:\nPick a person. Play Chopsticks. Loser drinks.",
+        "Charades!:\nPlay a game of charades, and you're doing the acting!  If your act is guessed, drink.  If not, everyone else drinks."
     };
     
     public static string[] queens = new string[] {
         "Outlier:\nEveryone but you drinks.",
-        "Resurrection:\nBring a player back into the game."
+        "Throne:\nDrink the beverage in the middle of the table, replace it with a new one, and you’re out of the game, congratulations!"
     };
     
     public static string[] kings = new string[] {
-        "Draw!:\n Draw another card and do that rule twice.",
+        "King's Bounty!:\n Draw another card and do that rule twice.",
         "Father and Son:\nChoose a prince to drink with you until another king is drawn."
     };
 
@@ -65,7 +73,7 @@ public class Rules : MonoBehaviour
     };
 
     public static string[] jokers = new string[] {
-        "Society:\nDrink the beverage in the middle of the table, replace it with a new one, and you’re out of the game, congratulations!"
+        "Resurrection:\nBring a player back into the game."
     };
 
     [Header("Choices")]

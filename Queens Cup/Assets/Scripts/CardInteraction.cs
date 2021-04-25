@@ -16,7 +16,9 @@ public class CardInteraction : MonoBehaviour, IPointerClickHandler
 
     [SerializeField] private AudioClip queenSong;
     [SerializeField] private AudioClip cardFlip;
+    
     private AudioSource myAudio;
+    private List<Card> myDeck;
 
     private string path = "CardArt/";
     #endregion
@@ -24,6 +26,7 @@ public class CardInteraction : MonoBehaviour, IPointerClickHandler
     // Start is called before the first frame update
     void Start()
     {
+        myDeck = GameObject.Find("Deck").GetComponent<Deck>().myDeck;
         myAudio = GameObject.Find("Audio").GetComponent<AudioSource>();
 
         // for the Pointer event
@@ -72,6 +75,13 @@ public class CardInteraction : MonoBehaviour, IPointerClickHandler
         myAudio.clip = cardFlip;
         myAudio.Play();
 
+        myDeck.Remove(myDeck.Find(x => x.mySuit.Contains(mySuit) && x.myValue.Contains(myValue)));
+
         Destroy(gameObject);
+
+        if (myDeck.Count == 0)
+        {
+            UIManagement.instance.GameOver();
+        }
     }
 }

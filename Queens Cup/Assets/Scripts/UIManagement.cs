@@ -6,15 +6,15 @@ using UnityEngine.SceneManagement;
 public class UIManagement : MonoBehaviour
 {
     #region Variables
+    public static UIManagement instance;
     private string sceneName;
-    //private AudioSource myAudio;
-    //[SerializeField] private AudioClip cardFlip;
+    [SerializeField] private GameObject endGameMenu;
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-        //myAudio = GameObject.Find("Audio").GetComponent<AudioSource>();
+        instance = this;
     }
 
     // Update is called once per frame
@@ -44,14 +44,16 @@ public class UIManagement : MonoBehaviour
         #endif
     }
 
-    ///// <summary>
-    ///// Destroys card on click
-    ///// </summary>
-    //public void destroyCard()
-    //{
-    //    myAudio.clip = cardFlip;
-    //    myAudio.Play();
+    /// <summary>
+    /// Game over
+    /// </summary>
+    public void GameOver()
+    {
+        endGameMenu.SetActive(true);
+    }
 
-    //    Destroy(gameObject);
-    //}
+    public void resetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
