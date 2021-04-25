@@ -23,19 +23,23 @@ public class Rules : MonoBehaviour
     };
 
     public static string[] fives = new string[] {
-       "Copycat:\nPick a person. That person drinks every time you drink for 9 turns, or until copycat is drawn again."
+       "Copycat:\nPick a person. That person drinks every time you drink for 9 turns, or until copycat is drawn again.",
+       "Picasso:\nDraw something in 10 seconds. If the group guesses it, you drink, if they can't, everyone drinks once and you drink twice."
     };
 
     public static string[] sixes = new string[] {
-        "Breakdown:\nSlap yourself in the face and drink."
+        "Breakdown:\nSlap yourself in the face and drink.",
+        "Radio:\n Pick a person. Have them hum a song for 5 seconds. If you can't guess it, you drink."
     };
     
     public static string[] sevens = new string[] {
-        "Skydive:\nEveryone raises one hand into the air.  Continue play.  The first person to lower their hand drinks."
+        "Skydive:\nEveryone raises one hand into the air.  Continue play.  The first person to lower their hand drinks.",
+        "Homies:\nPick two people to be your homies. You and your homies skip the next group event."
     };
     
     public static string[] eights = new string[] {
-        "Guardian:\nPick a person other than yourself.  That person is protected from having to drink once."
+        "Guardian:\nPick a person other than yourself.  That person is protected from having to drink once.",
+        "Gymnast:\nEvery balances on one leg. First person to lose their balance drinks."
     };
     
     public static string[] nines = new string[] {
@@ -55,7 +59,7 @@ public class Rules : MonoBehaviour
     
     public static string[] queens = new string[] {
         "Outlier:\nEveryone but you drinks.",
-        "Resurrection:\nBring a player back into the game."
+        "Throne:\nDrink the beverage in the middle of the table, replace it with a new one, and you’re out of the game, congratulations!"
     };
     
     public static string[] kings = new string[] {
@@ -69,7 +73,7 @@ public class Rules : MonoBehaviour
     };
 
     public static string[] jokers = new string[] {
-        "Society:\nDrink the beverage in the middle of the table, replace it with a new one, and you’re out of the game, congratulations!"
+        "Resurrection:\nBring a player back into the game."
     };
 
     [Header("Choices")]
