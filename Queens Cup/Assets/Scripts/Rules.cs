@@ -39,15 +39,18 @@ public class Rules : MonoBehaviour
     };
     
     public static string[] nines = new string[] {
-        "Jinx:\nEveryone knocks on a wooden surface.  The last to knock drinks."
+        "Jinx:\nEveryone knocks on a wooden surface.  The last to knock drinks.",
+        "Ninja:\nPlay a game of ninja with someone.  The loser drinks."
     };
 
     public static string[] tens = new string[] {
-        "Hollywood:\nName a movie genre.  Everyone takes turns listing movies in that genre.  If a person can't name a movie in 3 seconds, they drink."
+        "Hollywood:\nName a movie genre.  Everyone takes turns listing movies in that genre.  If a person can't name a movie in 3 seconds, they drink.",
+        "Roast:\nPick someone to have a roast battle or rap battle.  The other players judge.  Loser drinks."
     };
     
     public static string[] jacks = new string[] {
-        "Takeout:\nPick a person. Play Chopsticks. Loser drinks."
+        "Takeout:\nPick a person. Play Chopsticks. Loser drinks.",
+        "Charades!:\nPlay a game of charades, and you're doing the acting!  If your act is guessed, drink.  If not, everyone else drinks."
     };
     
     public static string[] queens = new string[] {
@@ -56,7 +59,7 @@ public class Rules : MonoBehaviour
     };
     
     public static string[] kings = new string[] {
-        "Draw!:\n Draw another card and do that rule twice.",
+        "King's Bounty!:\n Draw another card and do that rule twice.",
         "Father and Son:\nChoose a prince to drink with you until another king is drawn."
     };
 
