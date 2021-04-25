@@ -334,7 +334,6 @@ MonoBehaviour:
   myValue: 
   myRule: 
   mySuit: 
-  cardFlip: {fileID: 8300000, guid: b2114b015a1c6b541a2207865a46635f, type: 3}
   queenSong: {fileID: 8300000, guid: a43c2405f0b22804fa5d5001b29f16ea, type: 3}
 --- !u!1 &7029613196799327337
 GameObject:
@@ -395,6 +394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aacd13d922107243b25e9dfc903f640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardFlip: {fileID: 8300000, guid: b2114b015a1c6b541a2207865a46635f, type: 3}
 --- !u!1 &8240001014527614646
 GameObject:
   m_ObjectHideFlags: 0
