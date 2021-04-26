@@ -535,7 +535,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Chris Ravosa
+  m_Text: 'Christopher Ravosa
 
     Marinel Tinnirello
 
@@ -544,7 +544,7 @@ MonoBehaviour:
     Dillon
     Lane
 
-    Melissa Chodiuziutko'
+    Melissa Chodziutko'
 --- !u!222 &307128139
 CanvasRenderer:
   m_ObjectHideFlags: 0

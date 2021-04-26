@@ -78,7 +78,7 @@ public class Rules : MonoBehaviour
 
     [Header("Choices")]
     int choice;
-    public string[][] choices = new string[][] { twos, threes, fours, fives, sixes, sevens, eights, nines, tens, jacks, kings, queens, aces};
+    public string[][] choices = new string[][] { twos, threes, fours, fives, sixes, sevens, eights, nines, tens, jacks, queens, kings, aces};
     #endregion
 
     /// <summary>
