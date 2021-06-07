@@ -7,20 +7,22 @@ using UnityEngine.UI;
 public class CardInteraction : MonoBehaviour, IPointerClickHandler
 {
     #region Variables
+    [Header("UI Components")]
     [SerializeField] private GameObject overlay;
     [SerializeField] private Image myImage;
     [SerializeField] private Text myText;
+
+    [Header("Card Info")]
     [SerializeField] public string myValue;
     [SerializeField] public string myRule;
     [SerializeField] public string mySuit;
+    private List<Card> myDeck;
+    private string path = "CardArt/";
 
+    [Header("Audio")]
     [SerializeField] private AudioClip queenSong;
     [SerializeField] private AudioClip cardFlip;
-    
     private AudioSource myAudio;
-    private List<Card> myDeck;
-
-    private string path = "CardArt/";
     #endregion
 
     // Start is called before the first frame update

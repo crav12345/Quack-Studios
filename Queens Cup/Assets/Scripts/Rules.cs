@@ -69,7 +69,7 @@ public class Rules : MonoBehaviour
 
     public static string[] aces = new string[] {
         "Compliments to the Chef:\nCompliment someone aggressively until you can’t think of a compliment or you laugh.  Don’t repeat compliments.",
-        "Alphabet:\nsay a word starting with “A” - “Z”, if you’re can’t think of a word drink "
+        "Alphabet:\nSay a word starting with “A” - “Z”, if you’re can’t think of a word drink "
     };
 
     public static string[] jokers = new string[] {
