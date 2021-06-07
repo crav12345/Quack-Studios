@@ -11,11 +11,6 @@ public class UIManagement : MonoBehaviour
     [SerializeField] private GameObject endGameMenu;
     #endregion
 
-    void Awake()
-    {
-        Screen.orientation = ScreenOrientation.Landscape;
-    }
-
     // Start is called before the first frame update
     void Start()
     {
