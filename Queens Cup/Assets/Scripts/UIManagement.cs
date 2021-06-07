@@ -15,6 +15,7 @@ public class UIManagement : MonoBehaviour
     void Start()
     {
         instance = this;
+        Screen.orientation = ScreenOrientation.Landscape;
     }
 
     // Update is called once per frame
@@ -32,6 +33,20 @@ public class UIManagement : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void screenSizeHandler()
+    {
+        if (Input.deviceOrientation == DeviceOrientation.Portrait || Input.deviceOrientation == DeviceOrientation.PortraitUpsideDown)
+        {
+            //
+        }
+        else
+        {
+            //
+        }
+
+    }
+
+    #region Game States
     /// <summary>
     /// Quits game
     /// </summary>
@@ -40,7 +55,7 @@ public class UIManagement : MonoBehaviour
         #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
         #else
-                 Application.Quit();
+                Application.Quit();
         #endif
     }
 
@@ -52,8 +67,12 @@ public class UIManagement : MonoBehaviour
         endGameMenu.SetActive(true);
     }
 
+    /// <summary>
+    /// Resets game by reloading scene
+    /// </summary>
     public void resetGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    #endregion
 }
