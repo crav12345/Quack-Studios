@@ -32,19 +32,6 @@ public class UIManagement : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-    public void screenSizeHandler()
-    {
-        if (Input.deviceOrientation == DeviceOrientation.Portrait || Input.deviceOrientation == DeviceOrientation.PortraitUpsideDown)
-        {
-            //
-        }
-        else
-        {
-            //
-        }
-
-    }
-
     #region Game States
     /// <summary>
     /// Quits game
