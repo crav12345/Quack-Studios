@@ -13,12 +13,12 @@ public class Rules : MonoBehaviour
 
     public static string[] threes = new string[] {
         "Drink for free:\nTake one of someone else’s drinks.",
-        "Drink for me:\nPick a friend to drink for you for your next turn so you don’t have to!",
+        "Drink for me:\nPick a friend to drink for you the next time you are supposed to so that you don’t have to!",
         "Snaps:\nEveryone snaps their fingers three times, last one drinks."
     };
 
     public static string[] fours = new string[] {
-        "Leap frog:\nLeap frog race with a parent against two others from one side of the room to another.  Losing team drinks.",
+        "Leap frog:\nPLay a game of Leap frog with a partner against another pair from one side of the room to another and back again.  Losing pair drinks.",
         "Voltage:\nRace to turn of the lights. The winner does not drink, the rest do."
     };
 
@@ -49,7 +49,8 @@ public class Rules : MonoBehaviour
 
     public static string[] tens = new string[] {
         "Hollywood:\nName a movie genre.  Everyone takes turns listing movies in that genre.  If a person can't name a movie in 3 seconds, they drink.",
-        "Roast:\nPick someone to have a roast battle or rap battle.  The other players judge.  Loser drinks."
+        "Roast:\nPick someone to have a roast battle or rap battle.  The other players judge.  Loser drinks.",
+        "An InTENse Break:\nEveryone take a drink of water. Everyone should be drinking water Queens!"
     };
     
     public static string[] jacks = new string[] {
@@ -73,7 +74,7 @@ public class Rules : MonoBehaviour
     };
 
     public static string[] jokers = new string[] {
-        "Resurrection:\nBring a player back into the game."
+        "Resurrection:\nBring a player back into the game, or make a new custom rule everyone has to follow. If anyone forgets to follow it, they drink."
     };
 
     [Header("Choices")]
