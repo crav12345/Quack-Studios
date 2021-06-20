@@ -8,33 +8,39 @@ public class Rules : MonoBehaviour
     [Header("Rules")]
     public static string[] twos = new string[] {
         "Double Double:\nNext person to draw 2 must must drink twice.",
-        "Pants on Fire:\nPlay one round of two truths and a lie. If the lie is found, you drink. If a truth is picked, the rest of the group drinks."
+        "Pants on Fire:\nPlay one round of two truths and a lie. If the lie is found, you drink. If a truth is picked, the rest of the group drinks.",
+        "Whirl:\nSpin a bottle or similar object. Whoever it lands on, drinks."
     };
 
     public static string[] threes = new string[] {
         "Drink for free:\nTake one of someone else’s drinks.",
         "Drink for me:\nPick a friend to drink for you the next time you are supposed to so that you don’t have to!",
-        "Snaps:\nEveryone snaps their fingers three times, last one drinks."
+        "Snaps:\nEveryone snaps their fingers three times, last one drinks.",
+        "Rainbow:\nThe person wearing the most colorful outfit chooses a person to drink."
     };
 
     public static string[] fours = new string[] {
         "Leap frog:\nPLay a game of Leap frog with a partner against another pair from one side of the room to another and back again.  Losing pair drinks.",
-        "Voltage:\nRace to turn of the lights. The winner does not drink, the rest do."
+        "Voltage:\nRace to turn of the lights. The winner does not drink, the rest do.",
+        "Overkill:\nThe person who last drank drinks again."
     };
 
     public static string[] fives = new string[] {
        "Copycat:\nPick a person. That person drinks every time you drink for 9 turns, or until copycat is drawn again.",
-       "Picasso:\nDraw something in 10 seconds. If the group guesses it, you drink, if they can't, everyone drinks once and you drink twice."
+       "Picasso:\nDraw something in 10 seconds. If the group guesses it, you drink, if they can't, everyone drinks once and you drink twice.",
+       "Chaos:\nFinish your drink. The next drinking requirement affects everyone but you."
     };
 
     public static string[] sixes = new string[] {
         "Breakdown:\nSlap yourself in the face and drink.",
-        "Radio:\n Pick a person. Have them hum a song for 5 seconds. If you can't guess it, you drink."
+        "Radio:\nPick a person. Have them hum a song for 5 seconds. If you can't guess it, you drink.",
+        "Groundhog:\nRe-do the last card. If you don't remember what it was, drink."
     };
     
     public static string[] sevens = new string[] {
         "Skydive:\nEveryone raises one hand into the air.  Continue play.  The first person to lower their hand drinks.",
-        "Homies:\nPick two people to be your homies. You and your homies skip the next group event."
+        "Homies:\nPick two people to be your homies. You and your homies skip the next group event.",
+        "Pandemic:\n You and the two people physically closest to you that are playing drink."
     };
     
     public static string[] eights = new string[] {
@@ -70,11 +76,12 @@ public class Rules : MonoBehaviour
 
     public static string[] aces = new string[] {
         "Compliments to the Chef:\nCompliment someone aggressively until you can’t think of a compliment or you laugh.  Don’t repeat compliments.",
-        "Alphabet:\nSay a word starting with “A” - “Z”, if you’re can’t think of a word drink "
+        "Alphabet:\nSay a word starting with “A” - “Z”, if you’re can’t think of a word, drink."
     };
 
     public static string[] jokers = new string[] {
-        "Resurrection:\nBring a player back into the game, or make a new custom rule everyone has to follow. If anyone forgets to follow it, they drink."
+        "Resurrection:\nBring a player back into the game, or make a new custom rule everyone has to follow. If anyone forgets to follow it, they drink.",
+        "Forgery:\nMake up a rule for another card."
     };
 
     [Header("Choices")]
